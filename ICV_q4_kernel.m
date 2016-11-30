@@ -8,6 +8,8 @@ function [ motion_vector, sum ] = ICV_q4_kernel( fr1, fr2, wsize, bsize )
     fr1_size = size(fr1); fr2_size = size(fr2);
     sum = 0;
     motion_vector = [];
+    fr1 = fr1(:,:,1) * 0.299 + fr1(:,:,2) * 0.587 + fr1(:,:,3) * 0.114;
+    fr2 = fr2(:,:,1) * 0.299 + fr2(:,:,2) * 0.587 + fr2(:,:,3) * 0.114;
 
     for i=1:block_size:fr1_size(1)
         for j=1:block_size:fr1_size(2)

@@ -1,7 +1,6 @@
-%% 
-% Qurstion: Texture
+%% Qurstion6: Texture
 % Dataset: DatasetA/B
-disp('Intorduction of Computer Vision Coursework 2 - Q6: Texture');  
+disp('Intorduction of Computer Vision Coursework 2 - Q6: Texture');
 
 %% (a)
 

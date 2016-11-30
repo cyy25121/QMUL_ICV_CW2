@@ -4,10 +4,6 @@
 disp('Intorduction of Computer Vision Coursework 2 - Q4: Motion estimation');  
 clc; clear;
 drawArrow = @(x,y) quiver( x(1),y(1),(x(2)-x(1)),(y(2)-y(1)), 3, 'r', 'MaxHeadSize', 100); 
-%% Background
-v = VideoReader('Dataset/DatasetC.mpg');
-[bg, outImg, ~] = ICV_Background(v);
-
 %% Run
 
 %if(hasFrame(v))

@@ -1,4 +1,4 @@
-function [ bg, outImg , idx] = ICV_Background(v)
+function [ bg, outImg , idx] = ICV_q5_genbg(v)
     fr1 = readFrame(v);
     fr2 = readFrame(v);
     outImg = cat(4, fr1, fr2);

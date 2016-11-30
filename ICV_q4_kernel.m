@@ -2,7 +2,7 @@ function [ motion_vector, sum ] = ICV_q4_kernel( fr1, fr2, wsize, bsize )
 %% Parameter
     window_size = wsize;
     block_size = bsize;
-    diff_size = (window_size - block_size) / 2;
+    diff_size = (window_size) / 2;
     MSE_TH = 1;
 %% Kernel
     fr1_size = size(fr1); fr2_size = size(fr2);

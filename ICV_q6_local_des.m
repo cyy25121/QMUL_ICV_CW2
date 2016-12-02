@@ -1,4 +1,11 @@
 function [ local_d , sum] = ICV_q6_local_des( im, ws )
+% Function: ICV_q6_local_des
+% Input: 
+%       im: two dimentional matrix
+%       ws: Window size
+% Output:
+%       local_d: Local descriptor
+%       sum: How many times it count
     size_im = size(im);
     im_f_zeros = uint8(zeros(size_im(1) + 2, size_im(2) + 2));
     im_f_zeros(2:1+size_im(1), 2:1+size_im(2)) = im;

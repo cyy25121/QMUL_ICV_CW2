@@ -1,4 +1,12 @@
 function [ motion_vector, sum ] = ICV_q4_kernel( fr1, fr2, wsize, bsize )
+% Function: ICV_q4_kernel
+% Input:
+%       fr1, fr2
+%       wsize: Window size
+%       bsize: Block size
+% Output:
+%       motion_vector: Motion vector
+%       sum
 %% Parameter
     window_size = wsize;
     block_size = bsize;

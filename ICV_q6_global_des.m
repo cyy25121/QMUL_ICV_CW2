@@ -1,4 +1,7 @@
 function [ global_d ] = ICV_q6_global_des( im )
+% Function: ICV_q6_global_des
+% Input: 2-D matrix
+% Output: Global descriptor of whole image, a Cell{1,1} structure
     size_im = size(im);
     im_f_zeros = uint8(zeros(size_im(1) + 2, size_im(2) + 2));
     im_f_zeros(2:1+size_im(1), 2:1+size_im(2)) = im;

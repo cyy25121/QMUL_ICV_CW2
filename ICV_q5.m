@@ -3,7 +3,6 @@
 clc; clear;
 disp('Intorduction of Computer Vision Coursework 2 - Q5: Objects');
 
-
 %% (a)
 v = VideoReader('Dataset/DatasetC.mpg');
 [fr1, fr10] = ICV_q4_pickframes(v, 1, 10);

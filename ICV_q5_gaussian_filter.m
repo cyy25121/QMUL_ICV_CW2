@@ -1,4 +1,7 @@
 function [ outImg ] = ICV_q5_gaussian_filter( inImg )
+% Function: ICV_q5_gaussian_filter
+% Input: Input image
+% Output: Output image after applying gaussian filter
     size_in = size(inImg);
     kernel = [1 2 1; 2 4 2; 1 2 1] / 16;
     inImg_f_zeros = uint8(zeros(size_in(1) + 2, size_in(2) + 2));

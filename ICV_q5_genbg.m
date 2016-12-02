@@ -1,4 +1,10 @@
 function [ bg, outImg , idx] = ICV_q5_genbg(v)
+% Function: ICV_q5_genbg
+% Input: Video object
+% Output: 
+%       bg: Background image in greyscale
+%       outImg: Total frame
+%       idx: Frames count in video
     fr1 = ICV_rgb2grey(readFrame(v));
     if(hasFrame(v))
         fr2 = ICV_rgb2grey(readFrame(v));
